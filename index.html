@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbe9e9">
+  <title>1 Year Anniversity For My Baby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Padauk:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro">
+
+  <!-- Background music (put your song next to this file as music.mp3) -->
+  <audio id="bgm" loop preload="none">
+    <source src="First_love_[__ဝိုင်းစုခိုင်သိန်း__](256k).mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Floating hearts layer -->
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <!-- Header: logo + music button + progress bar (shown from section 2) -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-row">
+      <span class="logo">For My Baby</span>
+      <button class="pill" id="musicBtn" type="button">Music Off</button>
+    </div>
+    <div class="progress"><span id="progressFill"></span></div>
+  </header>
+
+  <main class="app">
+
+    <!-- ========== 1. INTRO ========== -->
+    <section class="screen active" id="s1" data-index="0">
+      <div class="intro-box">
+        <div class="intro-line"></div>
+        <h1 class="intro-title">For My Baby</h1>
+        <p class="my intro-sub">ကိုကို့ရဲ့ သဲငယ်လေးအတွက်<br>သီးသန့်ဖန်တီးထားတဲ့ အမှတ်တရလေးတစ်ခု။</p>
+        <button class="btn btn-primary btn-upper" type="button" data-next>Open your gift</button>
+      </div>
+    </section>
+
+    <!-- ========== 2. A LITTLE SURPRISE ========== -->
+    <section class="screen" id="s2" data-index="1">
+      <div class="container center">
+        <p class="eyebrow">A little surprise</p>
+        <h2 class="display">To My<br>Baby Girl</h2>
+        <p class="my lead">သဲငယ်လေးရေ...  ကိုက<br>သဲငယ်လေးအတွက် တစ်ခုခုလုပ်ပေးချင်လို့။</p>
+
+        <div class="swing-wrap">
+          <figure class="polaroid-big swing">
+            <div class="ph"><img src="1000025154.png" alt="" onerror="this.remove()"></div>
+          </figure>
+        </div>
+
+        <p class="my lead">ဒီစာမျက်နှာလေးကို အဆုံးထိဖတ်ပေးနော်။</p>
+        <p class="signature">Made with love, by Pyae Phyo Aung</p>
+        <div class="actions single">
+          <button class="btn btn-primary my" type="button" data-next>ကလေးလေးအတွက် →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. OUR LITTLE WORLD (day counter) ========== -->
+    <section class="screen" id="s3" data-index="2">
+      <div class="container center">
+        <p class="eyebrow">Our little world</p>
+        <h2 class="title my">ကိုတို့ရဲ့ အချိန်လေးတွေ</h2>
+        <p class="my lead">ကိုအတွက်တော့ သဲငယ်လေးနဲ့ ဖြတ်သန်းခဲ့တဲ့ နေ့ရက်တိုင်းက တန်ဖိုးရှိတယ်။</p>
+
+        <div class="ring">
+          <div class="ring-orbit"></div>
+          <div class="ring-core">
+            <span class="ring-num" id="daysBig">0</span>
+            <span class="ring-label">days together</span>
+          </div>
+        </div>
+
+        <p class="my sub">သဲငယ်လေးကို ချစ်လာခဲ့တာ</p>
+        <div class="stat-row">
+          <div class="stat"><b id="statYears">0</b><span class="my">နှစ်</span></div>
+          <div class="stat"><b id="statMonths">0</b><span class="my">လ</span></div>
+          <div class="stat"><b id="statDays">0</b><span class="my">ရက်</span></div>
+        </div>
+        <p class="date-text" id="dateText">1 November 2025</p>
+        <p class="my lead">အချိန်တွေ ဘယ်လောက်ကြာကြာ<br>ကို့ရဲ့ သဲငယ်လေးပဲ ဖြစ်နေပါနော်။</p>
+
+        <div class="actions">
+          <button class="btn btn-ghost" type="button" data-prev>← Back</button>
+          <button class="btn btn-primary" type="button" data-next>Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. OUR MEMORIES ========== -->
+    <section class="screen" id="s4" data-index="3">
+      <div class="container center">
+        <p class="eyebrow">Our memories</p>
+        <h2 class="title my">ကို့အကြိုက်ဆုံး အမှတ်တရတွေ</h2>
+        <p class="my lead">ပုံလေးတစ်ပုံချင်းစီမှာ ကိုတို့ရဲ့ ကိုယ်ပိုင်အမှတ်တရတွေ ရှိတယ်။</p>
+
+        <div class="polaroids">
+          <figure class="polaroid tilt-l">
+            <div class="ph"><img src="1000025869.png" alt="Our beginning" onerror="this.remove()"></div>
+            <figcaption>Our beginning</figcaption>
+          </figure>
+          <figure class="polaroid tilt-r lower">
+            <div class="ph"><img src="1000025870.png" alt="Your smile" onerror="this.remove()"></div>
+            <figcaption>Your smile</figcaption>
+          </figure>
+          <figure class="polaroid tilt-l2">
+            <div class="ph"><img src="1000026489.jpg" alt="Little moments" onerror="this.remove()"></div>
+            <figcaption>Little moments</figcaption>
+          </figure>
+          <figure class="polaroid tilt-r2 lower">
+            <div class="ph"><img src="1000026953.png" alt="Just us" onerror="this.remove()"></div>
+            <figcaption>Just us</figcaption>
+          </figure>
+        </div>
+
+        <p class="my lead memories-end">အမှတ်တရတွေ အများကြီးကို<br>သဲငယ်လေးနဲ့ပဲ ဆက်ဖန်တီးချင်တယ်။</p>
+        <div class="actions">
+          <button class="btn btn-ghost" type="button" data-prev>← Back</button>
+          <button class="btn btn-primary" type="button" data-next>Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. OUR STORY ========== -->
+    <section class="screen" id="s5" data-index="4">
+      <div class="container center">
+        <p class="eyebrow">Our story</p>
+        <h2 class="title my">ကိုတို့ရဲ့ ဇာတ်လမ်းလေး</h2>
+        <p class="my lead">အစကနေ အခုအချိန်ထိ... ကို့ဘက်ကတော့ အမှတ်တရတွေ အများကြီးပဲ။</p>
+
+        <ul class="timeline">
+          <li><h3>The day we met</h3><p class="my">သဲငယ်လေးကို စပြီးသိခဲ့ရတဲ့နေ့။</p></li>
+          <li><h3>The day you became mine</h3><p class="my">ကိုအတွက် အထူးခြားဆုံးနေ့လေး။</p></li>
+          <li><h3>Our little memories</h3><p class="my">စကားတွေ၊ ရယ်မောသံတွေ၊ အမှတ်တရလေးတွေ။</p></li>
+          <li><h3>And our future</h3><p class="my">နောက်လာမယ့်နေ့ရက်တွေကိုလည်း သဲငယ်လေးနဲ့အတူ ဖြတ်သန်းချင်တယ်။</p></li>
+        </ul>
+
+        <p class="my lead">ကိုတို့ရဲ့ ဇာတ်လမ်းလေးက<br>ဒီမှာတင် မပြီးသေးဘူးနော်။</p>
+        <div class="actions">
+          <button class="btn btn-ghost" type="button" data-prev>← Back</button>
+          <button class="btn btn-primary" type="button" data-next>Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. A LETTER FOR YOU ========== -->
+    <section class="screen" id="s6" data-index="5">
+      <div class="container center">
+        <p class="eyebrow">A letter for you</p>
+        <h2 class="title my">သဲငယ်လေးအတွက် စာတစ်စောင်</h2>
+        <p class="my lead">ဒီစာအိတ်လေးကို နှိပ်ပြီး ဖွင့်ကြည့်နော်။</p>
+
+        <div class="envelope-wrap" id="envWrap">
+          <button class="envelope" id="envelope" type="button" aria-label="Open your letter">
+            <span class="env-body"></span>
+            <span class="env-paper"><em>For My Baby</em></span>
+            <span class="env-pocket">
+              <i class="pk pk-l"></i><i class="pk pk-r"></i><i class="pk pk-b"></i>
+            </span>
+            <span class="env-flap"></span>
+            <span class="env-seal">K</span>
+          </button>
+        </div>
+        <p class="tap-hint" id="envHint">Tap to open your letter</p>
+
+        <article class="letter" id="letter">
+          <h3 class="letter-title">My Dearest Baby,</h3>
+          <p class="my">သဲငယ်လေးရေ...</p>
+          <p class="my">ကို့ဘဝထဲကို ရောက်လာပေးလို့ ကျေးဇူးတင်တယ်နော်။<br>သဲငယ်လေးရဲ့ အပြုံးလေးတွေ၊ စကားပြောပုံလေးတွေက<br>ကိုအတွက် အမြဲတမ်း အမှတ်တရပါပဲ။</p>
+          <p class="my">တစ်ခါတလေ ကိုက စကားနဲ့ သေချာမပြောတတ်ရင်တောင်<br>သဲငယ်လေးကို တန်ဖိုးထားပြီး ချစ်တယ်ဆိုတာ သိစေချင်တယ်။</p>
+          <p class="my">အဆင်ပြေတဲ့နေ့တွေမှာရော ခက်ခဲတဲ့နေ့တွေမှာပါ<br>တစ်ယောက်ကိုတစ်ယောက် နားလည်ပေးပြီး<br>အမှတ်တရကောင်းလေးတွေ အများကြီး ဖန်တီးသွားကြမယ်နော်။</p>
+          <p class="my">သဲငယ်လေးက ကို့အတွက် အရမ်းကို အဖိုးတန်တဲ့သူပါ။</p>
+          <p class="sign">With all my love,</p>
+          <p class="sign">Pyae Phyo Aung.</p>
+        </article>
+
+        <div class="actions">
+          <button class="btn btn-ghost" type="button" data-prev>← Back</button>
+          <button class="btn btn-primary" type="button" data-next>Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. ONE LAST THING (gift box) ========== -->
+    <section class="screen" id="s7" data-index="6">
+      <div class="container center">
+        <p class="eyebrow">One last thing</p>
+        <h2 class="title my">သဲငယ်လေးအတွက် လက်ဆောင်လေး</h2>
+        <p class="my lead">ကို့ဆီမှာ နောက်ဆုံးတစ်ခု ကျန်သေးတယ်။ ဖွင့်ကြည့်မလား။</p>
+
+        <button class="gift" id="gift" type="button" aria-label="Open the gift">
+          <span class="gift-box"></span>
+          <span class="gift-ribbon-v"></span>
+          <span class="gift-lid"></span>
+          <span class="gift-text">For You</span>
+        </button>
+        <p class="tap-hint" id="giftHint">Tap the gift to open</p>
+
+        <div class="reveal" id="reveal">
+          <h3 class="reveal-title">My Baby, Always.</h3>
+          <p class="my">ကို့ရဲ့ သဲငယ်းလေးဖြစ်နေပေးလို့ ကျေးဇူးတင်တယ်။<br>နောက်လာမယ့် အမှတ်တရတွေမှာလည်း<br>သဲငယ်လေးနဲ့အတူ ရှိနေချင်တယ်။</p>
+          <p class="reveal-en">Happy Anniversary, Baby.</p>
+          <p class="reveal-en">I love you, always.</p>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-ghost" type="button" data-prev>← Back</button>
+          <button class="btn btn-primary" type="button" data-next>Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. YOUR TURN (reply form -> Gmail) ========== -->
+    <section class="screen" id="s8" data-index="7">
+      <div class="container center">
+        <p class="eyebrow">Your turn</p>
+        <h2 class="title my">သဲငယ်လေးရဲ့ အဖြေလေး ပြောပြပါဦး</h2>
+        <p class="my lead">ဒီလက်ဆောင်လေးကြည့်ပြီး ဘယ်လိုခံစားရလဲ။ ကြိုက်တာရွေးပြီး ကို့ကို စာလေးရေးပေးနော်။</p>
+
+        <form class="reply" id="replyForm" action="https://formsubmit.cloud/f/55d358c1-6aeb-478d-9206-970faf5b9e84/" method="POST" novalidate>
+          
+    <input type="text" name="_gotcha" style="display:none">
+          <p class="my group-label">ခံစားချက်ရွေးပါ (တစ်ခုထက်ပိုရွေးလို့ရတယ်)</p>
+          <div class="chips" id="chips">
+            <button type="button" class="chip my" aria-pressed="false" data-value="ပျော်သွားတယ်">🥰 ပျော်သွားတယ်</button>
+            <button type="button" class="chip my" aria-pressed="false" data-value="ရင်ထဲတုန်သွားတယ်">💓 ရင်ထဲတုန်သွားတယ်</button>
+            <button type="button" class="chip my" aria-pressed="false" data-value="အရမ်းချစ်တယ်">💖 အရမ်းချစ်တယ်</button>
+            <button type="button" class="chip my" aria-pressed="false" data-value="ရှက်သွားတယ်">🙈 ရှက်သွားတယ်</button>
+          </div>
+
+          <label class="my group-label" for="msg">ကို့ကို ပြောချင်တာလေး</label>
+          <textarea id="msg" name="message" rows="6" class="my" placeholder="ဒီမှာ ရေးပေးပါနော်..."></textarea>
+
+          <p class="form-status my" id="formStatus" role="status" aria-live="polite"></p>
+
+          <div class="actions">
+            <button class="btn btn-ghost" type="button" data-prev>← Back</button>
+            <button class="btn btn-primary my" type="submit" id="sendBtn">ပို့မယ် 💌</button>
+          </div>
+        </form>
+
+        <div class="thanks" id="thanks">
+          <h3 class="reveal-title">Thank you, Baby 💖</h3>
+          <p class="my">သဲငယ်လေးရဲ့စာလေးကို ကိုကို လက်ခံရရှိပါပြီ။</p>
+          <div class="actions single">
+            <button class="btn btn-primary my" type="button" data-restart>အစကနေ ပြန်ကြည့်မယ်</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot" id="foot">A little world made just for you.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
